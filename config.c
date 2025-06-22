@@ -1,6 +1,6 @@
 #include "config.h"
 
-void read_portlist_from_file(const char *filename, portlist_t *portlist) {
+void read_portlist_from_file( portlist_t *portlist, const char *filename) {
     FILE *file = fopen(filename, "r");
     if (!file) {
         perror("Failed to open file");

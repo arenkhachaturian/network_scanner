@@ -19,4 +19,4 @@ typedef struct portlist_t {
     int len;
 } portlist_t;
 
-void read_portlist_from_file(const char *filename, portlist_t *portlist);
+void read_portlist_from_file( portlist_t *portlist, const char *filename);
